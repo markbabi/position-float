@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+.parent {
+  width: 50%;
+  background: lightcoral;
+  padding: 1rem;
+}
+
+.child {
+  height: 5rem;
+  background: lightblue;
+  position: static; /* default */
+  margin-bottom: 1rem;
+}
+
+.relative-child {
+  background: red;
+}
+
+.absolute-parent {
+}
+
+.absolute-child {
+  background: red;
+}
+
+.fixed-child {
+  background: red;
+}
+
+.on-top {
+}
+
+/* Sticky positioning */
+
+.sticky-element {
+}
+
+/* Float */
+
+.left-img {
+  width: 40%;
+  margin: 2rem;
+}
+
+.right-img {
+  width: 40%;
+  margin: 2rem;
+}
