@@ -2,10 +2,18 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  margin-top: 5rem;
+}
+
 .parent {
   width: 50%;
   background: lightcoral;
   padding: 1rem;
+}
+
+section {
+  position: static;
 }
 
 .child {
@@ -15,19 +23,43 @@ body {
   margin-bottom: 1rem;
 }
 
+.static-child {
+  background-color: blue;
+  top: 2rem;
+  right: 10rem;
+}
+
 .relative-child {
   background: red;
+  position: relative;
+  /* margin-top: 2rem; */
+  top: 2rem;
+  right: -3rem;
+  /* left: 2rem;
+  right: 2rem;
+  bottom: 4rem; */
 }
 
 .absolute-parent {
+  position: relative;
 }
 
 .absolute-child {
   background: red;
+  position: absolute;
+  height: auto;
+  padding: 1rem;
+  top: -1.5rem;
+  right: -1.5rem;
 }
 
 .fixed-child {
   background: red;
+  position: fixed;
+  /* z-index: -1; */
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .on-top {
@@ -36,6 +68,8 @@ body {
 /* Sticky positioning */
 
 .sticky-element {
+  position: sticky;
+  bottom: 0;
 }
 
 /* Float */
@@ -43,9 +77,11 @@ body {
 .left-img {
   width: 40%;
   margin: 2rem;
+  float: left;
 }
 
 .right-img {
   width: 40%;
   margin: 2rem;
+  float: right;
 }
